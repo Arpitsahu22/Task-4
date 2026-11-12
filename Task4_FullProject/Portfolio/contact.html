@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">MyPortfolio</h2>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+
+        <section class="section-box contact-section">
+
+            <h1>Contact Me</h1>
+
+            <p>Feel free to contact me using the form below.</p>
+
+            <form id="contactForm">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name"
+                       placeholder="Enter your name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject"
+                       placeholder="Enter subject">
+
+                <label for="message">Message</label>
+                <textarea id="message"
+                          placeholder="Write your message"></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+                <p id="formMessage" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

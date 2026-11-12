@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Listing Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <nav class="navbar">
+
+            <h1>ShopZone</h1>
+
+            <div class="nav-text">
+                Product Store
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+
+    <main class="container">
+
+        <h2>Our Products</h2>
+
+        <p class="description">
+            Explore products and find the best deals.
+        </p>
+
+        <!-- Filters -->
+
+        <section class="filter-section">
+
+            <div class="filter-group">
+
+                <label for="categoryFilter">
+                    Category
+                </label>
+
+                <select id="categoryFilter">
+
+                    <option value="all">All Categories</option>
+
+                    <option value="electronics">Electronics</option>
+
+                    <option value="clothing">Clothing</option>
+
+                    <option value="accessories">Accessories</option>
+
+                </select>
+
+            </div>
+
+            <div class="filter-group">
+
+                <label for="priceFilter">
+                    Maximum Price (₹)
+                </label>
+
+                <input
+                    type="number"
+                    id="priceFilter"
+                    placeholder="Enter maximum price"
+                    min="0"
+                >
+
+            </div>
+
+            <div class="filter-group">
+
+                <label for="sortFilter">
+                    Sort Products
+                </label>
+
+                <select id="sortFilter">
+
+                    <option value="default">Default</option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating">
+                        Highest Rating
+                    </option>
+
+                </select>
+
+            </div>
+
+            <button id="resetBtn">
+                Reset Filters
+            </button>
+
+        </section>
+
+        <!-- Product Count -->
+
+        <p id="productCount"></p>
+
+        <!-- Product Cards -->
+
+        <section id="productList" class="product-grid">
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>© 2026 ShopZone | Product Listing Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
